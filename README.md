@@ -1,0 +1,1 @@
+I am currently working on a personal project to maintain and enhance my skills. This website is being created using Python, and while it is still in its initial phase, I plan to add additional functionality in the future.
