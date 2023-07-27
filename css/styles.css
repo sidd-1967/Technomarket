@@ -135,6 +135,8 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
+
 }
 
 .custom-button:hover {
