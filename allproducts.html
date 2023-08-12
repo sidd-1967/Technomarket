@@ -11,7 +11,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
         <link rel="manifest" href="img/favicon/site.webmanifest">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="script/script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script/product-details.js"></script>
       </head>
 <body>
   <nav class="navbar">
@@ -41,7 +42,7 @@
       <div class="product-grid"> 
         <!-- Always upload 245 x 245  -->
           <!-- Product Card 1 --> 
-          <div class="product-card">
+          <div class="product-card" id="product1">
               <img src="img/Product 1.webp" alt="Product 1">
               <h3>MSI GF63 Thin, Intel 11th Gen. i5-11400H, 40CM FHD 144Hz Gaming Laptop</h3>
               <p class="truncate-text">
@@ -53,11 +54,11 @@
                 <br>
                 It also offers hot key customization for hard core mobile gamers to enhance gameplay.Yourself in lossless music and enjoy the premium sound quality with Hi-Resolution Audio. Experience and listen to audio the way it was intended.
               </p>
-              <a href="#" class="read-more">Read More</a>
+              <button onclick="showProductDetails(1)">View Details</button>
           </div>
 
           <!-- Product Card 2 -->
-          <div class="product-card">
+          <div class="product-card" id="product2">
               <img src="img/Product 2.webp" alt="Product 2">
               <h3>Ambrane Wireless Gaming Controller with Transparent Design, 2.4GHz</h3>
               <p class="truncate-text">
@@ -69,11 +70,11 @@
                 <br>
                 Dual Vibration Function: The Dual Vibration function provides immersive gameplay by providing haptic feedback in response to in-game actions, making the experience more realistic.
               </p>
-              <a href="#" class="read-more">Read More</a>
+              <button onclick="showProductDetails(2)">View Details</button>             
           </div>
 
           <!-- Product Card 3 -->
-          <div class="product-card">
+          <div class="product-card" id="product3">
               <img src="img/Product 3.webp" alt="Product 3">
               <h3>CHIST I5 Gaming PC CH1801 (Core i5 3470/ DDR3 16GB Ram /512 GB SSD )</h3>
               <p class="truncate-text">
@@ -85,11 +86,11 @@
                 <br>
                 Ready to Use System. Already installed Windows (11 trail) & Updated all drivers. Also installed some utilities like Google Chrome, VLC Player, Winrar.
               </p>
-              <a href="#" class="read-more">Read More</a>
+              <button onclick="showProductDetails(3)">View Details</button>  
           </div>
 
           <!-- Product Card 4 -->
-          <div class="product-card">
+          <div class="product-card" id="product4">
               <img src="img/Product 4.webp" alt="Product 4">
               <h3>Samsung 27-inch(68.5cm) Odyssey G5 Gaming,QHD 2K, 165Hz, Flat Monitor</h3>
               <p class="truncate-text">
@@ -101,10 +102,10 @@
                 <br>
                 Ready to Use System. Already installed Windows (11 trail) & Updated all drivers. Also installed some utilities like Google Chrome, VLC Player, Winrar.
               </p>
-              <a href="#" class="read-more">Read More</a>
+              <button onclick="showProductDetails(4)">View Details</button>
           </div>
           
-          <div class="product-card">
+          <div class="product-card" id="product5">
             <img src="img/Product 5.webp" alt="Product 5">
             <h3>Acer Aspire 5 Gaming Laptop</h3>
             <p class="truncate-text">
@@ -116,11 +117,11 @@
               <br>
               Over 150 top games and applications use RTX to deliver realistic graphics or cutting-edge new AI features like NVIDIA DLSS and NVIDIA Broadcast. RTX is the new standard.
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <button onclick="showProductDetails(5)">View Details</button>
           </div>
 
 
-          <div class="product-card">
+          <div class="product-card" id="product6">
             <img src="img/Product 6.webp" alt="Product 6">
             <h3>Zebronics Jet PRO Premium Wired Gaming On Ear Headphone with LED</h3>
             <p class="truncate-text">
@@ -132,10 +133,10 @@
               <br>
               Elevate your gaming experience with the LED light arrangement on both the headband and the earcups! The lights are multicolor, reflecting a varied range of color combinations.
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <button onclick="showProductDetails(6)">View Details</button>
           </div>
 
-          <div class="product-card">
+          <div class="product-card" id="product7">
             <img src="img/Product 7.webp" alt="Product 7">
             <h3>Acer Nitro QG271 27 inch Full HD Gaming LCD Monitor with LED Back Light</h3>
             <p class="truncate-text">
@@ -147,10 +148,10 @@
               <br>
               Care for your eyes with Acer VisionCare technology incorporates several features that take into consideration prolonged usage by heavy users I Acer Flicker-less I Acer BlueLightShield I Low dimming technology I Acer ComfyView display
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <button onclick="showProductDetails(7)">View Details</button>
           </div>
 
-          <div class="product-card">
+          <div class="product-card" id="product8">
             <img src="img/Product 8.webp" alt="Product 8">
             <h3>RAEGR RapidGear X70 USB Gaming Keyboard and Mouse Set | Made of Aluminium Body </h3>
             <p class="truncate-text">
@@ -162,10 +163,10 @@
               <br>
               RGB Gaming Mouse, Our mouse has professional-level programmable DPI settings ranging from 1200 to 7200, and our keyboard with instant media access. These features require native games that support the keyboard and mouse combination. The spectacular customizable RGB illumination will also enhance the gaming experience.
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <button onclick="showProductDetails(8)">View Details</button>
           </div>
 
-          <div class="product-card">
+          <div class="product-card" id="product9">
             <img src="img/Product 9.webp" alt="Product 9">
             <h3>MageGee Gaming Keyboard and Mouse Combo, K1 LED Rainbow Backlit Keyboard with 104 Key</h3>
             <p class="truncate-text">
@@ -176,10 +177,10 @@
               <br>
               <br>
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <button onclick="showProductDetails(9)">View Details</button>
           </div>
 
-          <div class="product-card">
+          <div class="product-card" id="product10">
             <img src="img/Product 10.webp" alt="Product 10">
             <h3>Cosmic Byte ARES Wireless Controller for PC (Black)</h3>
             <p class="truncate-text">
@@ -194,13 +195,18 @@
               <br>
               700mAh Battery for 12hrs of continuous gaming
             </p>
-            <a href="#" class="read-more">Read More</a>
+            <button onclick="showProductDetails(10)">View Details</button>
           </div>
 
           <!-- Add more product cards here -->
       </div>
   </div>
 </main>
-
+<script>
+  function showProductDetails(productId) {
+    var productDetailsUrl = "product-details.html?productId=" + productId;
+    window.location.href = productDetailsUrl;
+  }
+  </script>
 </body>
 </html>

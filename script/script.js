@@ -22,3 +22,31 @@ $(document).ready(function () {
 });
 
 
+//  Contact us Submit Sweet Alert
+
+// Select the form and the submit button
+const contactForm = document.querySelector('.contact-form form');
+const submitButton = document.getElementById('submit-button');
+
+// Add a submit event listener to the form
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Show SweetAlert after the form is submitted
+  Swal.fire({
+    icon: 'success',
+    title: 'Thank You!',
+    text: 'Your request has been submitted successfully.',
+    // confirmButtonText: 'OK'
+  });
+
+  // You can also reset the form fields if needed
+  contactForm.reset();
+});
+
+// Alternatively, you can use the submit button click event
+submitButton.addEventListener('click', function () {
+  // Trigger the form's submit event
+  contactForm.submit();
+});
+
